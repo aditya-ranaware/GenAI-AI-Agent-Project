@@ -1,0 +1,26 @@
+cd "C:\Users\ADITYA\Downloads\GEN AI Project\AI-Agents"
+
+@"
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+dist/
+
+# Local data and test builds
+**/backend/data/
+**/backend/static/
+.DS_Store
+*.log
+"@ | Set-Content -Encoding utf8 .gitignore
+
+Set-Content -Path 01-data-analyst-agent\backend\.env.example -Value "GROQ_API_KEY=your_key_here"
